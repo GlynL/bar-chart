@@ -2,6 +2,16 @@ body {
   text-align: center;
 }
 
-#svg {
-  /* border: 1px solid black; */
+.bar:hover {
+  fill: lightskyblue;
+}
+
+#tooltip {
+  position: absolute;
+  z-index: 10;
+  background-color: lightblue;
+  padding: 10px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  visibility: hidden;
 }
