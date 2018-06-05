@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .on("mouseover", d => {
         tooltip
           .style("visibility", "visible")
-          .style("top", event.pageY - 30 + "px")
-          .style("left", event.pageX + 10 + "px")
+          .style("top", d3.event.pageY - 30 + "px")
+          .style("left", d3.event.pageX + 20 + "px")
           .text(`${d[0]} GDP was $${d[1]}`)
           .attr("data-date", d[0]);
       })
